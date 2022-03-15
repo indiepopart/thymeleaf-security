@@ -15,7 +15,7 @@ import java.net.URI;
 public class SecurityConfiguration {
 
     @Bean
-    public ServerLogoutSuccessHandler logoutSuccessHandler(){
+    public ServerLogoutSuccessHandler logoutSuccessHandler() {
         RedirectServerLogoutSuccessHandler handler = new RedirectServerLogoutSuccessHandler();
         handler.setLogoutSuccessUrl(URI.create("/"));
         return handler;
@@ -29,7 +29,6 @@ public class SecurityConfiguration {
                 .and().oauth2Client()
                 .and().oauth2Login()
                 .and().logout().logoutSuccessHandler(logoutSuccessHandler());
-
 
         return http.build();
     }
