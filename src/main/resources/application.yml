@@ -1,5 +1,7 @@
 
 spring:
+  thymeleaf:
+    prefix: file:src/main/resources/templates/
   security:
     oauth2:
       client:
