@@ -1,4 +1,4 @@
-# Tutorial: Securing your application when using Thymeleaf templates with Spring Webflux
+# Tutorial: Thymeleaf Templates with Spring WebFlux to Secure Your Apps
 
 This repository contains all the code for the Thymeleaf and WebFlux Spring Boot tutorial, illustrating how to protect functionality based on the user authorities and authentication status, and how to prevent CSRF attacks with Spring Security.
 
